@@ -1,0 +1,120 @@
+const mongoose = require("mongoose")
+
+
+const productSchema = new mongoose.Schema({
+    name:{
+        type:"string",
+        required:true
+    },
+    isActive:{
+        type:Boolean,
+        required:true
+    },
+    short_description:{
+        type:"string",
+        required:true
+    },
+    description:{
+        type:"string",
+        required:true
+    },
+    version:{
+        type:"string",
+        required:true
+    },
+    script:{
+        type:"string",
+        required:true
+    },
+    trader:{
+        type:"string",
+        required:true
+    },
+    market:{
+        type:"string",
+        required:true
+    },
+    dashboard:{
+        type:"string",
+        required:true
+    },
+    alerts:{
+        type:"string",
+        required:true
+    },
+    signal:{
+        type:"string",
+        required:true
+    },
+    monthly_price:{
+        type:"string",
+        required:true
+    },
+    monthly_price_id:{
+        type:"string",
+        required:true
+    },
+
+    yearly_price:{
+        type:"string",
+        required:true
+    },
+    yearly_price_id:{
+        type:"string",
+        required:true
+    },
+    
+    lifetime_price:{
+        type:"string",
+        required:true
+    },
+    lifetime_price_id:{
+        type:"string",
+        required:true
+    },
+    f1_text:{
+        type:"string",
+        required:true
+    },
+    f2_text:{
+        type:"string",
+        required:true
+    },
+    f3_text:{
+        type:"string",
+        required:true
+    },
+    f4_text:{
+        type:"string",
+        required:true
+    },
+    f5_text:{
+        type:"string",
+        required:true
+    },
+
+    img1:{
+        type:"string",
+        required:true
+    },
+    img2:{
+        type:"string",
+        required:true
+    },
+    img3:{
+        type:"string",
+        required:true
+    },
+    img4:{
+        type:"string",
+        required:true
+    },
+    img5:{
+        type:"string",
+        required:true
+    }
+})
+mongoose.models = {}
+
+const Product = mongoose.model('PRODUCT',productSchema);
+module.exports = Product;
